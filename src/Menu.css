@@ -1,0 +1,86 @@
+/* CSS du l'App */
+
+.App {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    font-weight: bold;
+    color: white;
+}
+body {
+    position: relative;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+/*CSS du Menu*/
+nav {
+    display: flex;
+    background-color: #647fa3;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    position: absolute; /* ajoute une position absolue pour que la barre nav soit positionnée en haut de la page */
+    top: 0; /* positionne la barre nav tout en haut */
+}
+  
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+li {
+    margin: 0 10px;
+}
+  
+li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+li a:hover {
+    background-color: #2369c4;
+    box-shadow: 0px 15px 20px rgba(29, 64, 218, 0.4);
+    color: #0d1479;
+    transform: translateY(-7px);
+    
+}
+ 
+.Route {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
